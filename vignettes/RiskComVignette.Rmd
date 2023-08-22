@@ -1,0 +1,108 @@
+---
+title: "RiskCom"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{RiskCom}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  dpi=240
+)
+```
+
+```{r setup}
+library(RiskCom)
+```
+
+## Introduction
+
+RiskCom is a package containing tools to help in communicating risk.
+
+Previous packages were less customisable and required the use of specific icon libraries. RiskCom is flexible and allows images in files or internet URLs to be used, there is also a small built-in library of custom made icons.
+
+## `waffles`: Waffle plots 
+
+Waffle plots are useful for showing percentages, with each icon representing one percent. RiskCom contains some icons which can be used. Images in files or an internet URL can also be used.
+
+### Single
+
+It is very easy to create simple waffle plots. Here, the small built-in RiskCom library is used. To use a local image or an image from the internet, the `icon_lib` option can be set to `file` or `internet`.
+
+```{r, fig.width=7, fig.height=5, out.width="100%"}
+icons = c("happy", "neutral", "sad") # Choose icons
+legend = c("Happy", "Neutral", "Sad") # Name for the icons
+percentages = c(35, 45, 20) # Percentage of each icon
+waffles(icons, legend, percentages, icon_lib="RiskCom") # The waffle plot function
+```
+
+### Double
+
+A double waffle plot can be used to add an extra dimension to the waffle plots. The example below shows how many people have a disease and how many people are happy.
+
+```{r, fig.width=7, fig.height=5, out.width="100%"}
+icons1 = c("person", "person_grey")
+icons2 = c("happy", "neutral", "sad")
+legend1 = c("No disease", "Disease")
+legend2 = c("Happy", "Neutral", "Sad")
+percentages = c(70,9,1, 3, 5, 12)
+waffles(icons=icons1, legend=legend1, percentages,
+        icons2=icons2, legend2=legend2, icon_size=0.09)
+```
+
+## `ninN`: Showing n in N patients with a disease or condition
+
+These can help in visually demonstrating statements such as "Two in five people have high cholesterol." They are similar to waffle plots, but on a smaller scale.
+
+```{r, fig.height=1, fig.width=5, out.width="100%"}
+ninN(n=2, N=5, icon="person", plt_size=.8)
+```
+
+If, for example, some risk factor increased this to three in five, we could show this using the `additional` argument. Here we also show how the `colours` argument can be used to choose the colour of the icons.
+
+```{r, fig.height=1, fig.width=5, out.width="100%"}
+ninN(n=2, N=5, icon="person", additional=1, plt_size=.8, colours = c("black", "blue", "lightgrey"))
+```
+
+## `barprob`: Visual plot of probabilties
+
+Pie charts are commonly used, but they can be difficult to read as we find it difficult to judge angles and find it easier to judge straight line distances. An alternative to a bar chart is to just use a single line. The `barprob` function can be used for this. 
+
+```{r}
+bar_prob(c("Yes", "No"), 
+         c(80,20))
+
+```
+
+```{r}
+bar_prob(c("Yes", "Maybe", "No"), 
+         c(50,30,20),
+         colours=c("green", "orange", "red"))
+```
+
+## `bartab`: Displaying a bar chart and a table
+
+For some information, some people prefer a bar chart and other prefer a table. This is an easy way to show both. It is less useful for patients.
+
+
+### Single
+
+```{r, fig.height=7, fig.width=7, out.width="100%"}
+data(mtcars) # Load the car dataset
+cyl = factor(mtcars$cyl) # Convert cylinders to factors
+gears = factor(mtcars$gear) # Convert gears to factors
+bartab(vals = cyl, xlab = "Cylinders", ylab = "Frequency") # The bartab function
+```
+
+### Multiple
+
+This also works for multiple bar charts. 
+
+```{r, fig.height=7, fig.width=7, out.width="100%"}
+bartab(vals = cyl, xlab = "Cylinders", ylab = "Frequency",
+       vals2 = gears, flab = "Gears")
+```

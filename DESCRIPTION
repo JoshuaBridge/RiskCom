@@ -1,0 +1,16 @@
+Package: RiskCom
+Type: Package
+Title: Tools for Risk Communication
+Version: 0.1.0
+Authors@R: person("Joshua", "Bridge", email = "joshuabridge@vivaldi.net",
+  role = c("aut", "cre"))
+Description: Tools mostly for communicating risk to patients.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: ggplot2, ggimage, flextable, grid, gridExtra, patchwork, stringr
+RoxygenNote: 7.2.3
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
