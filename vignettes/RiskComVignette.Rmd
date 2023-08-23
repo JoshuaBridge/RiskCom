@@ -73,13 +73,13 @@ ninN(n=2, N=5, icon="person", additional=1, plt_size=.8, colours = c("black", "b
 Pie charts are commonly used, but they can be difficult to read as we find it difficult to judge angles and find it easier to judge straight line distances. An alternative to a bar chart is to just use a single line. The `barprob` function can be used for this. 
 
 ```{r}
-bar_prob(c("Yes", "No"), 
+barprob(c("Yes", "No"), 
          c(80,20))
 
 ```
 
 ```{r}
-bar_prob(c("Yes", "Maybe", "No"), 
+barprob(c("Yes", "Maybe", "No"), 
          c(50,30,20),
          colours=c("green", "orange", "red"))
 ```

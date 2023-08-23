@@ -2,6 +2,8 @@ globalVariables(c("img1", "img2", "icon", "img"))
 #' Probability represented by a single bar
 #'
 #' @import ggplot2
+#' @import extrafont
+#'
 #' @param probabilities Vector of probabilities
 #' @param categories Vector of category names
 #' @param colours Colours of the categories
@@ -11,13 +13,15 @@ globalVariables(c("img1", "img2", "icon", "img"))
 #'
 #' @examples
 #'
-#' bar_prob(c("Yes", "No"), c(80,20),
+#' barprob(c("Yes", "No"), c(80,20),
 #'         colours=c("green", "red"))
-#' bar_prob(c("Yes", "Maybe", "No"), c(50,30,20),
+#' barprob(c("Yes", "Maybe", "No"), c(50,30,20),
 #'         colours=c("green", "orange", "red"))
 #'
 
-bar_prob = function(categories, probabilities, colours=NULL){
+barprob = function(categories, probabilities, colours=NULL){
+  font_import()
+  loadfonts(device = "postscript")
   df = data.frame(fill = categories, y=probabilities, x=1)
   df$fill = factor(df$fill, levels=categories)
   plt = ggplot(df, aes(x=x, y=y))+
