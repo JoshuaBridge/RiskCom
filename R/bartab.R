@@ -9,7 +9,6 @@ globalVariables(c("freq"))
 #' @import patchwork
 #' @import stringr
 #' @import utils
-#' @import extrafont
 #'
 #' @param vals Vector of the x-axis factors.
 #' @param xlab Label for the x-axis
@@ -30,8 +29,6 @@ globalVariables(c("freq"))
 #'        vals2 = gears, flab = "Gears")
 bartab = function(vals, xlab, ylab,
                    vals2, flab, missing=FALSE){
-  font_import()
-  loadfonts(device = "postscript")
   if (missing(vals2)){
     bartab1(vals, xlab, ylab)
   }

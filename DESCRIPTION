@@ -8,7 +8,7 @@ Description: Tools mostly for communicating risk to patients.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: ggplot2, ggimage, flextable, grid, gridExtra, patchwork, stringr, extrafont
+Imports: ggplot2, ggimage, flextable, grid, gridExtra, patchwork, stringr
 RoxygenNote: 7.2.3
 Suggests: 
     knitr,

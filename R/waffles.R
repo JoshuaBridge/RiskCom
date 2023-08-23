@@ -7,7 +7,6 @@ globalVariables(c("img1", "img2", "icon", "img"))
 #' @import grid
 #' @import gridExtra
 #' @import patchwork
-#' @import extrafont
 #' @import utils
 #'
 #' @param icons Vector of icon paths
@@ -50,8 +49,6 @@ waffles = function(icons, legend, percentages, icon_lib='RiskCom',
                    icons2, legend2, export,
                    icon_size=0.1, icon_size2=0.04, legend_size=0.5, dir_size="height",
                    offset_x=-0.25, offset_y=-0.25){
-  font_import()
-  loadfonts(device = "postscript")
   if (sum(percentages)!=100){
     stop("The percentages must be a vector of integers which sum to 100.
          Each percent will be an individual icon on the plot.")

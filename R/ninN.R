@@ -4,7 +4,6 @@ globalVariables(c("fill", "x", "y"))
 #' @import ggplot2
 #' @import ggimage
 #' @import utils
-#' @import extrafont
 #'
 #' @param n Number with the disease or condition
 #' @param N Total number of people
@@ -24,8 +23,6 @@ globalVariables(c("fill", "x", "y"))
 #' # Example with a risk factor increasing the risk from 2 in 5 to 3 in 5
 #' ninN(n=2, N=5, icon="person", additional=1, plt_size=.3)
 ninN = function(n, N, icon, additional, plt_size=0.5, icon_lib="RiskCom", export, colours){
-  font_import()
-  loadfonts(device = "postscript")
   if (icon_lib=="RiskCom"){
     icon = paste0(icon, ".png")
     icon = system.file("extdata", icon, package="RiskCom")
