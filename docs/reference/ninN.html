@@ -105,9 +105,399 @@
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Example showing 2 in 5 people with a disease.</span></span></span>
 <span class="r-in"><span><span class="fu">ninN</span><span class="op">(</span>n<span class="op">=</span><span class="fl">2</span>, N<span class="op">=</span><span class="fl">5</span>, icon<span class="op">=</span><span class="st">"person"</span>, plt_size<span class="op">=</span><span class="fl">.3</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Importing fonts may take a few minutes, depending on the number of fonts and the speed of the system.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Continue? [y/n] </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Exiting.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Agency FB already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Algerian already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Arial already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Arial Black already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Arial Narrow already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Arial Rounded MT Bold already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bahnschrift already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Baskerville Old Face already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bauhaus 93 already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bell MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Berlin Sans FB already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> No regular (non-bold, non-italic) version of Berlin Sans FB Demi. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bernard MT Condensed already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Blackadder ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bodoni MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bodoni MT Black already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bodoni MT Condensed already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bodoni MT Poster Compressed already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Book Antiqua already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bookman Old Style already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bookshelf Symbol 7 already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bradley Hand ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Britannic Bold already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Broadway already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> No regular (non-bold, non-italic) version of Brush Script MT. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Calibri already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Calibri Light already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Californian FB already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Calisto MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> No regular (non-bold, non-italic) version of Cambria. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Candara already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Candara Light already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Cascadia Code already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Cascadia Mono already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Castellar already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Centaur already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Century already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Century Gothic already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Century Schoolbook already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Chiller already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Colonna MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Comic Sans MS already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Consolas already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Constantia already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Cooper Black already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Copperplate Gothic Bold already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Copperplate Gothic Light already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Corbel already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Corbel Light already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Courier New already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Curlz MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Dubai already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Dubai Light already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Dubai Medium already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Ebrima already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Edwardian Script ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Elephant already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Engravers MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Eras Bold ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Eras Demi ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Eras Light ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Eras Medium ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Felix Titling already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Font Awesome 5 Brands Regular already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Font Awesome 5 Free Regular already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Font Awesome 5 Free Solid already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Footlight MT Light already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Forte already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Franklin Gothic Book already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Franklin Gothic Demi already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Franklin Gothic Demi Cond already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Franklin Gothic Heavy already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Franklin Gothic Medium already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Franklin Gothic Medium Cond already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Freestyle Script already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> French Script MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Gabriola already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Gadugi already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Garamond already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Georgia already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Gigi already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Gill Sans MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Gill Sans MT Condensed already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Gill Sans MT Ext Condensed Bold already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Gill Sans Ultra Bold already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Gill Sans Ultra Bold Condensed already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Gloucester MT Extra Condensed already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Goudy Old Style already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Goudy Stout already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Haettenschweiler already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> No regular (non-bold, non-italic) version of Harlow Solid Italic. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Harrington already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> High Tower Text already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> HoloLens MDL2 Assets already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Impact already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Imprint MT Shadow already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Informal Roman already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Ink Free already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Javanese Text already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Jokerman already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Juice ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Kristen ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Kunstler Script already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Leelawadee already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Leelawadee UI already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Leelawadee UI Semilight already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> More than one version of regular/bold/italic found for Lucida Bright. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> No regular (non-bold, non-italic) version of Lucida Calligraphy. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Lucida Console already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> More than one version of regular/bold/italic found for Lucida Fax. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> No regular (non-bold, non-italic) version of Lucida Handwriting. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> More than one version of regular/bold/italic found for Lucida Sans. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Lucida Sans Typewriter already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Lucida Sans Unicode already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> MS Outlook already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> MS Reference Sans Serif already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> MS Reference Specialty already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> MT Extra already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> MV Boli already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> No regular (non-bold, non-italic) version of Magneto. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Maiandra GD already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Malgun Gothic already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Malgun Gothic Semilight already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Marlett already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Matura MT Script Capitals already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Microsoft Himalaya already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Microsoft New Tai Lue already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Microsoft PhagsPa already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Microsoft Sans Serif already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Microsoft Tai Le already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Microsoft Uighur already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Microsoft Yi Baiti already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Mistral already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Modern No. 20 already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Mongolian Baiti already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Monotype Corsiva already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Myanmar Text already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Niagara Engraved already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Niagara Solid already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Nirmala UI already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Nirmala UI Semilight already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> OCR A Extended already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Old English Text MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Onyx already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Palace Script MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Palatino Linotype already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Papyrus already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Parchment already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Perpetua already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Perpetua Titling MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Playbill already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Poor Richard already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Pristina already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> No regular (non-bold, non-italic) version of Rage Italic. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Ravie already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Rockwell already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Rockwell Condensed already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Rockwell Extra Bold already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Script MT Bold already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe MDL2 Assets already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe Print already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe Script already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe UI already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe UI Black already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe UI Emoji already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe UI Historic already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe UI Light already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe UI Semibold already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe UI Semilight already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe UI Symbol already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Showcard Gothic already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> SimSun-ExtB already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Snap ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Stencil already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Sylfaen already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Symbol already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Tahoma already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Tempus Sans ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Times New Roman already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Trebuchet MS already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Tw Cen MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Tw Cen MT Condensed already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Tw Cen MT Condensed Extra Bold already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Verdana already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Viner Hand ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> No regular (non-bold, non-italic) version of Vivaldi. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Vladimir Script already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Webdings already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Wide Latin already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Wingdings already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Wingdings 2 already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Wingdings 3 already registered with postscriptFont().</span>
 <span class="r-plt img"><img src="ninN-1.png" alt="" width="700" height="433"></span>
 <span class="r-in"><span><span class="co"># Example with a risk factor increasing the risk from 2 in 5 to 3 in 5</span></span></span>
 <span class="r-in"><span><span class="fu">ninN</span><span class="op">(</span>n<span class="op">=</span><span class="fl">2</span>, N<span class="op">=</span><span class="fl">5</span>, icon<span class="op">=</span><span class="st">"person"</span>, additional<span class="op">=</span><span class="fl">1</span>, plt_size<span class="op">=</span><span class="fl">.3</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Importing fonts may take a few minutes, depending on the number of fonts and the speed of the system.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Continue? [y/n] </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Exiting.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Agency FB already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Algerian already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Arial already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Arial Black already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Arial Narrow already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Arial Rounded MT Bold already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bahnschrift already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Baskerville Old Face already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bauhaus 93 already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bell MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Berlin Sans FB already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> No regular (non-bold, non-italic) version of Berlin Sans FB Demi. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bernard MT Condensed already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Blackadder ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bodoni MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bodoni MT Black already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bodoni MT Condensed already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bodoni MT Poster Compressed already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Book Antiqua already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bookman Old Style already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bookshelf Symbol 7 already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Bradley Hand ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Britannic Bold already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Broadway already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> No regular (non-bold, non-italic) version of Brush Script MT. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Calibri already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Calibri Light already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Californian FB already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Calisto MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> No regular (non-bold, non-italic) version of Cambria. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Candara already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Candara Light already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Cascadia Code already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Cascadia Mono already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Castellar already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Centaur already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Century already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Century Gothic already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Century Schoolbook already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Chiller already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Colonna MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Comic Sans MS already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Consolas already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Constantia already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Cooper Black already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Copperplate Gothic Bold already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Copperplate Gothic Light already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Corbel already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Corbel Light already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Courier New already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Curlz MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Dubai already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Dubai Light already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Dubai Medium already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Ebrima already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Edwardian Script ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Elephant already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Engravers MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Eras Bold ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Eras Demi ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Eras Light ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Eras Medium ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Felix Titling already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Font Awesome 5 Brands Regular already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Font Awesome 5 Free Regular already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Font Awesome 5 Free Solid already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Footlight MT Light already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Forte already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Franklin Gothic Book already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Franklin Gothic Demi already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Franklin Gothic Demi Cond already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Franklin Gothic Heavy already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Franklin Gothic Medium already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Franklin Gothic Medium Cond already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Freestyle Script already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> French Script MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Gabriola already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Gadugi already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Garamond already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Georgia already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Gigi already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Gill Sans MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Gill Sans MT Condensed already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Gill Sans MT Ext Condensed Bold already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Gill Sans Ultra Bold already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Gill Sans Ultra Bold Condensed already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Gloucester MT Extra Condensed already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Goudy Old Style already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Goudy Stout already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Haettenschweiler already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> No regular (non-bold, non-italic) version of Harlow Solid Italic. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Harrington already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> High Tower Text already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> HoloLens MDL2 Assets already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Impact already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Imprint MT Shadow already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Informal Roman already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Ink Free already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Javanese Text already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Jokerman already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Juice ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Kristen ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Kunstler Script already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Leelawadee already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Leelawadee UI already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Leelawadee UI Semilight already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> More than one version of regular/bold/italic found for Lucida Bright. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> No regular (non-bold, non-italic) version of Lucida Calligraphy. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Lucida Console already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> More than one version of regular/bold/italic found for Lucida Fax. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> No regular (non-bold, non-italic) version of Lucida Handwriting. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> More than one version of regular/bold/italic found for Lucida Sans. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Lucida Sans Typewriter already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Lucida Sans Unicode already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> MS Outlook already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> MS Reference Sans Serif already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> MS Reference Specialty already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> MT Extra already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> MV Boli already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> No regular (non-bold, non-italic) version of Magneto. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Maiandra GD already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Malgun Gothic already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Malgun Gothic Semilight already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Marlett already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Matura MT Script Capitals already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Microsoft Himalaya already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Microsoft New Tai Lue already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Microsoft PhagsPa already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Microsoft Sans Serif already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Microsoft Tai Le already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Microsoft Uighur already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Microsoft Yi Baiti already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Mistral already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Modern No. 20 already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Mongolian Baiti already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Monotype Corsiva already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Myanmar Text already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Niagara Engraved already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Niagara Solid already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Nirmala UI already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Nirmala UI Semilight already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> OCR A Extended already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Old English Text MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Onyx already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Palace Script MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Palatino Linotype already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Papyrus already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Parchment already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Perpetua already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Perpetua Titling MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Playbill already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Poor Richard already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Pristina already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> No regular (non-bold, non-italic) version of Rage Italic. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Ravie already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Rockwell already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Rockwell Condensed already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Rockwell Extra Bold already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Script MT Bold already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe MDL2 Assets already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe Print already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe Script already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe UI already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe UI Black already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe UI Emoji already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe UI Historic already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe UI Light already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe UI Semibold already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe UI Semilight already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Segoe UI Symbol already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Showcard Gothic already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> SimSun-ExtB already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Snap ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Stencil already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Sylfaen already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Symbol already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Tahoma already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Tempus Sans ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Times New Roman already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Trebuchet MS already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Tw Cen MT already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Tw Cen MT Condensed already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Tw Cen MT Condensed Extra Bold already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Verdana already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Viner Hand ITC already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> No regular (non-bold, non-italic) version of Vivaldi. Skipping setup for this font.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Vladimir Script already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Webdings already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Wide Latin already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Wingdings already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Wingdings 2 already registered with postscriptFont().</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Wingdings 3 already registered with postscriptFont().</span>
 <span class="r-plt img"><img src="ninN-2.png" alt="" width="700" height="433"></span>
 </code></pre></div>
     </div>

@@ -5,7 +5,7 @@ Version: 0.1.0
 Authors@R: person("Joshua", "Bridge", email = "joshuabridge@vivaldi.net",
   role = c("aut", "cre"))
 Description: Tools mostly for communicating risk to patients.
-License: MIT 
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: ggplot2, ggimage, flextable, grid, gridExtra, patchwork, stringr, extrafont
