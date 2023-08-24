@@ -27,6 +27,9 @@ ninN = function(n, N, icon, additional, plt_size=0.5, icon_lib="RiskCom", export
     icon = paste0(icon, ".png")
     icon = system.file("extdata", icon, package="RiskCom")
   }
+
+  theme_set(theme_gray(base_family = 'mono' ))
+
   img = rep(icon, N)
   if (missing(additional)){
     if (missing(colours)){
@@ -37,7 +40,7 @@ ninN = function(n, N, icon, additional, plt_size=0.5, icon_lib="RiskCom", export
     plt = ggplot(df) +
       geom_image(aes(x = x, y = y, image = img, colour=fill), size=plt_size)+
       scale_colour_manual(values=colours)+
-      theme_void()+
+
       xlim(c(0.5,N+.5))+
       theme(legend.position = "none")
   } else{
@@ -49,9 +52,10 @@ ninN = function(n, N, icon, additional, plt_size=0.5, icon_lib="RiskCom", export
     plt = ggplot(df) +
       geom_image(aes(x = x, y = y, image = img, colour=fill), size=plt_size)+
       scale_colour_manual(values=colours)+
-      theme_void()+
+
       xlim(c(0.5,N+.5))+
-      theme(legend.position = "none")
+      theme(legend.position = "none", text=element_text(size=16)) +
+      theme_void()
   }
   if (!missing(export)){
     ggsave(export, height=1,width=N)

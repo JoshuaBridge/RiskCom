@@ -29,6 +29,9 @@ globalVariables(c("freq"))
 #'        vals2 = gears, flab = "Gears")
 bartab = function(vals, xlab, ylab,
                    vals2, flab, missing=FALSE){
+
+  set_flextable_defaults(font.family = "sans")
+
   if (missing(vals2)){
     bartab1(vals, xlab, ylab)
   }

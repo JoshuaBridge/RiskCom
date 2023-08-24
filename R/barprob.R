@@ -19,18 +19,16 @@ globalVariables(c("img1", "img2", "icon", "img"))
 #'
 
 barprob = function(categories, probabilities, colours=NULL){
+
   df = data.frame(fill = categories, y=probabilities, x=1)
   df$fill = factor(df$fill, levels=categories)
   plt = ggplot(df, aes(x=x, y=y))+
     geom_col(aes(fill=fill), show.legend = TRUE)+
     coord_flip()+
     scale_y_continuous(trans="reverse")+
-    # annotate("text", x = 1, y = probabilities[1]/2,
-    #          label = paste0(probabilities[1], "%"))+
-    # annotate("text", x = 1, y = 100-probabilities[2]/2,
-    #          label = paste0(probabilities[2], "%"))+
+
+    theme(legend.position = "bottom") +
     theme_void()+
-    theme(legend.position = "bottom")+
     labs(fill="")
   if(!is.null(colours)){
     plt=plt+scale_fill_manual(values=colours)

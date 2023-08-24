@@ -49,26 +49,33 @@ waffles = function(icons, legend, percentages, icon_lib='RiskCom',
                    icons2, legend2, export,
                    icon_size=0.1, icon_size2=0.04, legend_size=0.5, dir_size="height",
                    offset_x=-0.25, offset_y=-0.25){
-  if (sum(percentages)!=100){
+
+  # The next line is very important. R seems to struggle with fonts and without
+  # this line flextable tried to use the 'Ariel' font. On my machine, this was
+  # 'TT Ariel'. This line tells R to just use whichever is the sans font on the
+  # machine. This should hopefully work across platforms and machines.
+  set_flextable_defaults(font.family="sans")
+
+  if (sum(percentages)!=100){ # This makes sure that the percentages sum to 100.
     stop("The percentages must be a vector of integers which sum to 100.
          Each percent will be an individual icon on the plot.")
   }
-  if (missing(icons2)){
-    if (icon_lib=="RiskCom"){
+  if (missing(icons2)){ # If 'icons2' is not specified then use the single waffle plot
+    if (icon_lib=="RiskCom"){ # If using the built-in library
       icons = paste0(icons, ".png")
       icons = system.file("extdata", icons, package="RiskCom")
     }
-    if (icon_lib == "internet"){
+    if (icon_lib == "internet"){ # If using images from the internet
       icons = unname(sapply(icons, save_temp_images))
     }
     plt = waffles1(icons, legend, percentages,
-             icon_size, legend_size, dir_size)
+             icon_size, legend_size, dir_size) # Call the single waffle plot function
   } else {
-    if (icon_lib == "internet"){
+    if (icon_lib == "internet"){ # If using images from the internet
       icons = unname(sapply(icons, save_temp_images))
       icons2 = unname(sapply(icons2, save_temp_images))
     }
-    if (icon_lib=="RiskCom"){
+    if (icon_lib=="RiskCom"){ # If using the built-in library
       icons = paste0(icons, ".png")
       icons = system.file("extdata", icons, package="RiskCom")
       icons2 = paste0(icons2, ".png")
@@ -77,17 +84,23 @@ waffles = function(icons, legend, percentages, icon_lib='RiskCom',
     plt = waffles2(icons=icons, legend=legend, percentages=percentages,
              icons2=icons2, legend2=legend2,
              icon_size=icon_size, icon_size2, legend_size, dir_size,
-             offset_x, offset_y)
+             offset_x, offset_y) # Call the double waffle plot function
   }
-  if (!missing(export)){
-    ggsave(export, height=5,width=7)
+  if (!missing(export)){ # If a file name to export to is specified
+    ggsave(export, height=5,width=7) # Save
   }
-  plt
+  plt = plt +
+    theme(text=element_text(size=16)) +
+    theme_void()
+
+
+  plt # Return the plot
 }
 
+# The single waffle plot function
 waffles1 = function(icons, legend, percentages,
                     icon_size, legend_size, dir_size){
-  y = rep(1:10,10)
+  y = rep(1:10,10) # Creating a grid of 10-by-1
   x = c(rep(1,10), rep(2,10), rep(3,10), rep(4,10), rep(5,10),
         rep(6,10), rep(7,10), rep(8,10), rep(9,10), rep(10,10))
   df = c()
@@ -114,6 +127,7 @@ waffles1 = function(icons, legend, percentages,
   plt+
     gen_grob(ft)+
     plot_layout(ncol=2, widths=c(5,2))+
+    theme(text=element_text(size=16))+
     theme_void()
 
 }
@@ -137,7 +151,7 @@ waffles2 = function(icons, legend, percentages, icons2, legend2,
   df1 <- data.frame(x = x, y = y, img1 = df_icon1, img2 = df_icon2)
   plt = ggplot(df1) +
     geom_image(aes(x = x, y = y, image = img1), size=icon_size, by=dir_size)+   scale_y_reverse()+
-    theme_void()+ geom_image(aes(x = x+offset_x, y = y+offset_y, image = img2), size=icon_size2, by=dir_size)+   scale_y_reverse()+
+    geom_image(aes(x = x+offset_x, y = y+offset_y, image = img2), size=icon_size2, by=dir_size)+   scale_y_reverse()+
     theme_void()
   ft_legend = data.frame(
     icon=unlist(icons_list),
@@ -154,7 +168,8 @@ waffles2 = function(icons, legend, percentages, icons2, legend2,
   plt+
     gen_grob(ft)+
     plot_layout(ncol=2, widths=c(5,2))+
-    theme_void()
+
+    theme(text=element_text(size=16))
 }
 
 save_temp_images <- function(img){
