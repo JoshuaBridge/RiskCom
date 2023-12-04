@@ -15,3 +15,4 @@ Suggests:
     rmarkdown
 URL: https://github.com/JoshuaBridge/RiskCom
 VignetteBuilder: knitr
+BugReports: https://github.com/JoshuaBridge/RiskCom/issues
