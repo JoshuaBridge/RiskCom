@@ -1,42 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/404.html</loc>
+    <loc>https://github.com/JoshuaBridge/RiskCom/404.html</loc>
   </url>
   <url>
-    <loc>/articles/index.html</loc>
+    <loc>https://github.com/JoshuaBridge/RiskCom/articles/index.html</loc>
   </url>
   <url>
-    <loc>/articles/RiskComVignette.html</loc>
+    <loc>https://github.com/JoshuaBridge/RiskCom/articles/RiskComVignette.html</loc>
   </url>
   <url>
-    <loc>/authors.html</loc>
+    <loc>https://github.com/JoshuaBridge/RiskCom/authors.html</loc>
   </url>
   <url>
-    <loc>/index.html</loc>
+    <loc>https://github.com/JoshuaBridge/RiskCom/index.html</loc>
   </url>
   <url>
-    <loc>/LICENSE-text.html</loc>
+    <loc>https://github.com/JoshuaBridge/RiskCom/LICENSE-text.html</loc>
   </url>
   <url>
-    <loc>/LICENSE.html</loc>
+    <loc>https://github.com/JoshuaBridge/RiskCom/LICENSE.html</loc>
   </url>
   <url>
-    <loc>/reference/barprob.html</loc>
+    <loc>https://github.com/JoshuaBridge/RiskCom/news/index.html</loc>
   </url>
   <url>
-    <loc>/reference/bartab.html</loc>
+    <loc>https://github.com/JoshuaBridge/RiskCom/reference/barprob.html</loc>
   </url>
   <url>
-    <loc>/reference/bar_prob.html</loc>
+    <loc>https://github.com/JoshuaBridge/RiskCom/reference/bartab.html</loc>
   </url>
   <url>
-    <loc>/reference/index.html</loc>
+    <loc>https://github.com/JoshuaBridge/RiskCom/reference/bar_prob.html</loc>
   </url>
   <url>
-    <loc>/reference/ninN.html</loc>
+    <loc>https://github.com/JoshuaBridge/RiskCom/reference/index.html</loc>
   </url>
   <url>
-    <loc>/reference/waffles.html</loc>
+    <loc>https://github.com/JoshuaBridge/RiskCom/reference/ninN.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/JoshuaBridge/RiskCom/reference/waffles.html</loc>
   </url>
 </urlset>
