@@ -1,7 +1,7 @@
 Package: RiskCom
 Type: Package
 Title: Tools for Risk Communication
-Version: 0.1.0
+Version: 1.0.0
 Authors@R: person("Joshua", "Bridge", email = "joshuabridge@vivaldi.net",
   role = c("aut", "cre", "cph"))
 Description: Tools mostly for communicating risk to patients. Includes a highly customisable function for creating waffle plots (icon arrays).
