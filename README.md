@@ -4,12 +4,6 @@
 
 ## Installation
 
-To install RiskCom from CRAN use `install.packages()`.
-
-```r
-install.packages("RiskCom")
-```
-
 To install RiskCom from GitHub use `devtools`.
 
 ```r
